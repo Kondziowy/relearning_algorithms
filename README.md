@@ -10,12 +10,12 @@ to both improve my design skills and my interview skills.
 
 My plan is as follows:
 1. Implement at least one algorithm/data structure from the following categories:
-- [] Sorting
-- [] Tree traversal 
-- [x] Dynamic programming ([Dijkstra](./dijkstra.py)
-- [] Heap
-- [] Hashing algorithm
-- [] Asymmetric cryptography
+- [ ] Sorting
+- [ ] Tree traversal 
+- [x] Dynamic programming ([Dijkstra](./dijkstra.py))
+- [ ] Heap
+- [ ] Hashing algorithm
+- [ ] Asymmetric cryptography
 
 ## Format
 Each algorithm should be a single runnable file in Python.
