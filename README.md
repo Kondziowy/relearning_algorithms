@@ -12,10 +12,11 @@ My plan is as follows:
 1. Implement at least one algorithm/data structure from the following categories:
 - [ ] Sorting
 - [ ] Tree traversal 
-- [x] Dynamic programming ([Dijkstra](./dijkstra.py))
+- [x] Dynamic programming ([Dijkstra](./dijkstra.py), A*)
 - [ ] Heap
 - [ ] Hashing algorithm
 - [ ] Asymmetric cryptography
+- [ ] Image processing (e.g. unsharp mask)
 
 ## Format
 Each algorithm should be a single runnable file in Python.
