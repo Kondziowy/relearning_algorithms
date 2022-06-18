@@ -80,15 +80,17 @@ def get_shortest_paths(vertices, edges, starting_point) -> typing.List[Vertex]:
                 if (next_vertex.distance + edge.weight) < edge.start.distance:
                     edge.start.distance = next_vertex.distance + edge.weight
         shortest_path_set.append(next_vertex)
-        vertices.pop(next_vertex)
+        vertices.remove(next_vertex)
 
     return shortest_path_set
 
 def print_shortest_paths(shortest_paths, starting_point):
-    log.info("Shortest path lengths from vertex %d" % starting_point.label)
+    log.info("Shortest path lengths from vertex %d", starting_point.label)
     for path in shortest_paths:
+        log.info("To vertex %d - %d", path.label, path.distance)
 
 if __name__ == '__main__':
     vertices, edges = get_test_data()
-    shortest_paths = get_shortest_paths(vertices, edges, vertices[0])
-    print_shortest_paths(shortest_paths, vertices[0])
+    starting_point = vertices[0]
+    shortest_paths = get_shortest_paths(vertices, edges, starting_point)
+    print_shortest_paths(shortest_paths, starting_point)
